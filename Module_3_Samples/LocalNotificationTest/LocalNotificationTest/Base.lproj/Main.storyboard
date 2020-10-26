@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LocalNotificationTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KLh-cY-cn4">
+                                <rect key="frame" x="107" y="425.5" width="200" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="TaN-5E-CTT"/>
+                                    <constraint firstAttribute="height" constant="55" id="X1a-ji-Xs3"/>
+                                </constraints>
+                                <state key="normal" title="Schedule Notification"/>
+                                <connections>
+                                    <action selector="didTapSchedule:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lzH-9q-bwj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lma-SK-R0F">
+                                <rect key="frame" x="107" y="500.5" width="200" height="55"/>
+                                <state key="normal" title="Cancel"/>
+                                <connections>
+                                    <action selector="didTapCancel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pz6-bu-NcB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R9E-uG-opn">
+                                <rect key="frame" x="107" y="575.5" width="200" height="55"/>
+                                <state key="normal" title="List Pending Notifications"/>
+                                <connections>
+                                    <action selector="didTapListPendingNotifications:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zEv-gp-aqe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="KLh-cY-cn4" firstAttribute="width" secondItem="Lma-SK-R0F" secondAttribute="width" id="0hQ-hJ-6TW"/>
+                            <constraint firstItem="KLh-cY-cn4" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="LcU-tN-6Qj"/>
+                            <constraint firstItem="R9E-uG-opn" firstAttribute="height" secondItem="KLh-cY-cn4" secondAttribute="height" id="MII-qO-Nw2"/>
+                            <constraint firstItem="R9E-uG-opn" firstAttribute="centerX" secondItem="KLh-cY-cn4" secondAttribute="centerX" id="XAM-wb-Zcd"/>
+                            <constraint firstItem="KLh-cY-cn4" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="Z5F-HL-Omc"/>
+                            <constraint firstItem="R9E-uG-opn" firstAttribute="width" secondItem="KLh-cY-cn4" secondAttribute="width" id="Zds-Pr-96w"/>
+                            <constraint firstItem="Lma-SK-R0F" firstAttribute="top" secondItem="KLh-cY-cn4" secondAttribute="bottom" constant="20" id="b5U-GF-P5P"/>
+                            <constraint firstItem="KLh-cY-cn4" firstAttribute="centerX" secondItem="Lma-SK-R0F" secondAttribute="centerX" id="ctu-XM-FgE"/>
+                            <constraint firstItem="R9E-uG-opn" firstAttribute="top" secondItem="Lma-SK-R0F" secondAttribute="bottom" constant="20" id="gV4-7h-Mz9"/>
+                            <constraint firstItem="KLh-cY-cn4" firstAttribute="height" secondItem="Lma-SK-R0F" secondAttribute="height" id="orD-k2-h7F"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="141" y="127"/>
+        </scene>
+    </scenes>
+</document>

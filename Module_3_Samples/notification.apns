@@ -1,0 +1,9 @@
+ {
+     "Simulator Target Bundle" : "com.ddukk.PushNotificationDemo20",
+     "aps" : {
+         "alert" : {"title": "Push Test Title","body": "Notification body"},
+         "sound" : "test_sound.wav",
+         "badge" : 86
+     },
+     "messageID" : "AX12456"
+ }
